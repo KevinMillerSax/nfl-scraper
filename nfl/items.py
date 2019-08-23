@@ -20,4 +20,23 @@ class NflItem(scrapy.Item):
      age = scrapy.Field()
      college = scrapy.Field()
      
+
+# class ScheduleItem(scrapy.Item):
+#     team = scrapy.Field()
+#     away_team = scrapy.Field()
+#     date = scrapy.Field()
+#     result = scrapy.Field()
+   
+class SchedItem(scrapy.Item):
+    away_team = scrapy.Field()
+    away_team_record = scrapy.Field()
+    away_team_score = scrapy.Field()
+    home_team = scrapy.Field()
+    home_team_record = scrapy.Field()
+    home_team_score = scrapy.Field()
+    week = scrapy.Field()
+    
+   
+
+    
     
